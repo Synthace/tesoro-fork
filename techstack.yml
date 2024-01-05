@@ -1,7 +1,8 @@
 repo_name: Synthace/tesoro-fork
 report_id: 245255ed2c2f85181ff2a98992a286b3
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-10T14:19:51+00:00'
+timestamp: '2024-01-05T08:53:47+00:00'
 requested_by: bsda
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork
   detection_source: Repo Metadata
 - name: Ruby
   description: A dynamic, interpreted, open source programming language with a focus
@@ -26,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/requirements.txt
   detection_source: requirements.txt
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-08-10 09:03:53.000000000 Z
@@ -37,6 +40,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Templating Languages & Extensions
   image_url: https://img.stackshare.io/service/3693/smarty.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork
   detection_source: Repo Metadata
 - name: Docker
   description: Enterprise Container Platform for High-Velocity Innovation.
@@ -47,6 +51,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork
   detection_source: Repo Metadata
 - name: Drone.io
   description: Open source continuous integration platform built on Docker
@@ -56,6 +61,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/668/R_wMcCqN_400x400.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/.drone.yml
   detection_source: ".drone.yml"
   last_updated_by: Bruno Almeida
   last_updated_on: 2023-03-22 13:11:09.000000000 Z
@@ -67,6 +73,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -76,7 +83,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
-  detection_source: ".github/workflows/python-black.yml"
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/.github/workflows/docker-image.yml
+  detection_source: ".github/workflows/docker-image.yml"
   last_updated_by: Pawel Sarbinowski
   last_updated_on: 2020-07-16 11:20:43.000000000 Z
 - name: PyPI
@@ -87,6 +95,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Hosted Package Repository
   image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/requirements.txt
   detection_source: requirements.txt
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-08-10 09:03:53.000000000 Z
@@ -98,6 +107,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/requirements.txt
   detection_source: requirements.txt
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-08-10 09:03:53.000000000 Z
@@ -110,6 +120,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/.travis.yml
   detection_source: ".travis.yml"
   last_updated_by: Pawel Sarbinowski
   last_updated_on: 2020-06-16 17:38:02.000000000 Z
@@ -122,10 +133,11 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/Synthace/tesoro-fork
   detection_source: Repo Metadata
 - name: aiohttp
   description: Async http client/server framework
-  package_url: https://pypi.org/aiohttp
+  package_url: https://pypi.org/project/aiohttp
   version: 3.8.4
   license: Apache-2.0
   open_source: true
@@ -133,11 +145,35 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/19852/default_d748224707283d9d8a73c2323730c87bda6b313a.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/requirements.txt
   detection_source: requirements.txt
   last_updated_by: Bruno Almeida
   last_updated_on: 2023-03-02 04:53:37.000000000 Z
   vulnerabilities:
+  - name: aiohttp's ClientSession is vulnerable to CRLF injection via version
+    cve_id: CVE-2023-49081
+    cve_url: https://github.com/advisories/GHSA-q3qx-c6g2-7pw2
+    detected_date: Nov 28
+    severity: high
+    first_patched: 3.9.0
+  - name: aiohttp has vulnerable dependency that is vulnerable to request smuggling
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-pjjw-qhg8-p2p9
+    detected_date: Nov 29
+    severity: moderate
+    first_patched: 3.8.6
+  - name: aiohttp's ClientSession is vulnerable to CRLF injection via method
+    cve_id: CVE-2023-49082
+    cve_url: https://github.com/advisories/GHSA-qvrw-v9rv-5rjx
+    detected_date: Nov 28
+    severity: moderate
+    first_patched: 3.9.0
+  - name: AIOHTTP has problems in HTTP parser (the python one, not llhttp)
+    cve_id: CVE-2023-47627
+    cve_url: https://github.com/advisories/GHSA-gfw2-4jvh-wgfg
+    detected_date: Nov 15
+    severity: moderate
+    first_patched: 3.8.6
   - name: aiohttp.web.Application vulnerable to HTTP request smuggling via llhttp
       HTTP request parser
     cve_id: CVE-2023-37276
@@ -147,7 +183,7 @@ tools:
     first_patched: 3.8.5
 - name: jsonpatch
   description: Apply JSON-Patches
-  package_url: https://pypi.org/jsonpatch
+  package_url: https://pypi.org/project/jsonpatch
   version: '1.32'
   license: BSD-3-Clause
   open_source: true
@@ -155,7 +191,7 @@ tools:
   category: Libraries
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20389/default_dbae17f97e8212cfa7ac5c2981eb06a9bf0f7b40.png
-  detection_source_url: requirements.txt
+  detection_source_url: https://github.com/Synthace/tesoro-fork/blob/master/requirements.txt
   detection_source: requirements.txt
   last_updated_by: dependabot[bot]
   last_updated_on: 2021-08-10 09:03:53.000000000 Z
