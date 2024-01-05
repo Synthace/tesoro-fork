@@ -1,7 +1,8 @@
 <!--
---- Readme.md Snippet without images Start ---
+&lt;--- Readme.md Snippet without images Start ---&gt;
 ## Tech Stack
 Synthace/tesoro-fork is built on the following main stack:
+
 - [Drone.io](https://drone.io/) – Continuous Integration
 - [Ruby](https://www.ruby-lang.org) – Languages
 - [Python](https://www.python.org) – Languages
@@ -12,11 +13,13 @@ Synthace/tesoro-fork is built on the following main stack:
 - [Travis CI](http://travis-ci.com/) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet without images End ---
 
---- Readme.md Snippet with images Start ---
+&lt;--- Readme.md Snippet without images End ---&gt;
+
+&lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 Synthace/tesoro-fork is built on the following main stack:
+
 - <img width='25' height='25' src='https://img.stackshare.io/service/668/R_wMcCqN_400x400.png' alt='Drone.io'/> [Drone.io](https://drone.io/) – Continuous Integration
 - <img width='25' height='25' src='https://img.stackshare.io/service/989/ruby.png' alt='Ruby'/> [Ruby](https://www.ruby-lang.org) – Languages
 - <img width='25' height='25' src='https://img.stackshare.io/service/993/pUBY5pVj.png' alt='Python'/> [Python](https://www.python.org) – Languages
@@ -27,14 +30,15 @@ Synthace/tesoro-fork is built on the following main stack:
 - <img width='25' height='25' src='https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png' alt='Travis CI'/> [Travis CI](http://travis-ci.com/) – Continuous Integration
 
 Full tech stack [here](/techstack.md)
---- Readme.md Snippet with images End ---
+
+&lt;--- Readme.md Snippet with images End ---&gt;
 -->
 <div align="center">
 
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [Synthace/tesoro-fork](https://github.com/Synthace/tesoro-fork)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|13<br/>Tools used|11/10/23 <br/>Report generated|
+|13<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -148,10 +152,10 @@ Full tech stack [here](/techstack.md)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
-|[aiohttp](https://pypi.org/aiohttp)|v3.8.4|03/02/23|Bruno Almeida |Apache-2.0|[CVE-2023-37276](https://github.com/advisories/GHSA-45c4-8wx5-qw6w) (Moderate)|
-|[jsonpatch](https://pypi.org/jsonpatch)|v1.32|08/10/21|dependabot[bot] |BSD-3-Clause|N/A|
+|[aiohttp](https://pypi.org/project/aiohttp)|v3.8.4|03/02/23|Bruno Almeida |Apache-2.0|[CVE-2023-49081](https://github.com/advisories/GHSA-q3qx-c6g2-7pw2) (High)<br/>[](https://github.com/advisories/GHSA-pjjw-qhg8-p2p9) (Moderate)<br/>[CVE-2023-49082](https://github.com/advisories/GHSA-qvrw-v9rv-5rjx) (Moderate)<br/>[CVE-2023-47627](https://github.com/advisories/GHSA-gfw2-4jvh-wgfg) (Moderate)<br/>[CVE-2023-37276](https://github.com/advisories/GHSA-45c4-8wx5-qw6w) (Moderate)|
+|[jsonpatch](https://pypi.org/project/jsonpatch)|v1.32|08/10/21|dependabot[bot] |BSD-3-Clause|N/A|
 
 <br/>
 <div align='center'>
 
-Generated via [Stack File](https://github.com/apps/stack-file)
+Generated via [Stack File](https://github.com/marketplace/stack-file)
